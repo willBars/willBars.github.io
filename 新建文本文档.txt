@@ -1,0 +1,71 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.aksgs.myxzb/com.qincaigame.androidegret.Main}: java.lang.IllegalArgumentException: Can only use lower 8 bits for requestCode
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4060)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4247)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:91)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:149)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:103)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2613)
+        at android.os.Handler.dispatchMessage(Handler.java:110)
+        at android.os.Looper.loop(Looper.java:219)
+        at android.app.ActivityThread.main(ActivityThread.java:8668)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:513)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1109)
+     Caused by: java.lang.IllegalArgumentException: Can only use lower 8 bits for requestCode
+        at android.support.v4.app.FragmentActivity.validateRequestPermissionsRequestCode(FragmentActivity.java:799)
+        at android.support.v4.app.ActivityCompatApi23.requestPermissions(ActivityCompat23.java:29)
+        at android.support.v4.app.ActivityCompat.requestPermissions(ActivityCompat.java:316)
+        at com.game.usdk.xutils.tools.PermissionManager.requestRealPermissions(Unknown Source:0)
+        at com.game.usdk.xutils.tools.PermissionManager.requestPermissions(Unknown Source:105)
+        at com.game.usdk.xutils.tools.PermissionManager.initPermissions(Unknown Source:5)
+        at com.game.usdk.platform.Platform.init(Unknown Source:102)
+        at com.game.usdk.plugin.GameUProxyUser.init(Unknown Source:8)
+        at com.game.usdk.GameUSDK.init(Unknown Source:56)
+        at com.qincaigame.androidegret.PlatformInstance.initSDK(Unknown Source:31)
+        at com.qincaigame.androidegret.PlatformInstance.beforeInit(Unknown Source:12)
+        at com.qincaigame.androidegret.Main.onCreate(Unknown Source:249)
+        at android.app.Activity.performCreate(Activity.java:8214)
+        at android.app.Activity.performCreate(Activity.java:8202)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1320)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4033)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4247)?
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:91)?
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:149)?
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:103)?
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2613)?
+        at android.os.Handler.dispatchMessage(Handler.java:110)?
+        at android.os.Looper.loop(Looper.java:219)?
+        at android.app.ActivityThread.main(ActivityThread.java:8668)?
+        at java.lang.reflect.Method.invoke(Native Method)?
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:513)?
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1109)?
+2021-08-16 17:33:44.903 31011-31011/? E/BaseLib?ExU: ====printThrowableInfo begin====
+2021-08-16 17:33:44.903 31011-31011/? E/BaseLib?ExU: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.aksgs.myxzb/com.qincaigame.androidegret.Main}: java.lang.IllegalArgumentException: Can only use lower 8 bits for requestCode
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4060)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4247)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:91)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:149)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:103)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2613)
+        at android.os.Handler.dispatchMessage(Handler.java:110)
+        at android.os.Looper.loop(Looper.java:219)
+        at android.app.ActivityThread.main(ActivityThread.java:8668)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:513)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1109)
+     Caused by: java.lang.IllegalArgumentException: Can only use lower 8 bits for requestCode
+        at android.support.v4.app.FragmentActivity.validateRequestPermissionsRequestCode(FragmentActivity.java:799)
+        at android.support.v4.app.ActivityCompatApi23.requestPermissions(ActivityCompat23.java:29)
+        at android.support.v4.app.ActivityCompat.requestPermissions(ActivityCompat.java:316)
+        at com.game.usdk.xutils.tools.PermissionManager.requestRealPermissions(Unknown Source:0)
+        at com.game.usdk.xutils.tools.PermissionManager.requestPermissions(Unknown Source:105)
+        at com.game.usdk.xutils.tools.PermissionManager.initPermissions(Unknown Source:5)
+        at com.game.usdk.platform.Platform.init(Unknown Source:102)
+        at com.game.usdk.plugin.GameUProxyUser.init(Unknown Source:8)
+        at com.game.usdk.GameUSDK.init(Unknown Source:56)
+        at com.qincaigame.androidegret.PlatformInstance.initSDK(Unknown Source:31)
+        at com.qincaigame.androidegret.PlatformInstance.beforeInit(Unknown Source:12)
+        at com.qincaigame.androidegret.Main.onCreate(Unknown Source:249)
+        at android.app.Activity.performCreate(Activity.java:8214)
+        at android.app.Activity.performCreate(Activity.java:8202)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1320)
